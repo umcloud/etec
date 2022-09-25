@@ -15,7 +15,6 @@ resource "google_compute_instance" "vm_01" {
   machine_type = "e2-micro"
   tags         = ["http"]
 
-
   boot_disk {
     initialize_params {
       image = data.google_compute_image.ubuntu.self_link
